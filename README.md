@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kaoru965.github.io/night-escape/">🎮 Play Now</a>
+  <a href="https://asanali-games.itch.io/night-escape">🎮 Play Now</a>
   ·
   <a href="https://github.com/kaoru965/night-escape">💻 Source Code</a>
 </p>
@@ -72,7 +72,7 @@ Your survival time is your score.
 
 ## 🌐 Play Online
 
-### ▶️ [Play Night Escape](https://kaoru965.github.io/night-escape/)
+### ▶️ [Play Night Escape](https://asanali-games.itch.io/night-escape/)
 
 No installation required.
 
