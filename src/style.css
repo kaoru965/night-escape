@@ -1,0 +1,23 @@
+/* Styles for the game */
+
+:root{--bg:#0b0d12;--fg:#f3f3f3;--acc:#ffb703}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);overflow:hidden;font-family:system-ui,"Segoe UI",Arial,sans-serif;user-select:none}
+canvas{position:fixed;inset:0;display:block}
+.hide{display:none!important}
+.ov{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;background:rgba(5,7,12,.6);backdrop-filter:blur(4px);z-index:5}
+#lose{background:radial-gradient(circle,rgba(110,0,0,.4),rgba(15,0,0,.9))}
+.card{padding:28px 36px;max-width:540px}
+h1{font-size:clamp(34px,8vw,70px);margin:0 0 8px;letter-spacing:.08em}
+#lose h1{color:#ff3b3b;text-shadow:0 0 30px #f00}
+p{line-height:1.5;opacity:.9}
+button{font:700 18px inherit;font-family:inherit;padding:14px 34px;border:0;border-radius:10px;background:var(--acc);color:#111;cursor:pointer;margin-top:10px}
+button:hover{filter:brightness(1.1)}
+small{display:block;margin-top:16px;opacity:.65}
+#vig{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+#hud{position:fixed;inset:0;pointer-events:none;z-index:2;text-shadow:0 2px 8px #000}
+#hud>div{position:absolute}
+#time{top:calc(14px + env(safe-area-inset-top,0px));left:18px;font-size:30px;font-weight:700}
+#stars{top:calc(52px + env(safe-area-inset-top,0px));left:18px;font-size:24px;color:#ffd24a;letter-spacing:3px}
+#spd{bottom:calc(16px + env(safe-area-inset-bottom,0px));right:22px;font-size:20px;text-align:right}
+#spd b{font-size:54px}
+#help{bottom:calc(16px + env(safe-area-inset-bottom,0px));left:18px;font-size:13px;opacity:.7}

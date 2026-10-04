@@ -1,0 +1,17 @@
+<!-- 
+ Copyright (C) kaoru965
+ This project have a WTFPL license, see LICENSE for details
+-->
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>Побег от полиции</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="src/favicon.svg">
+<link rel="stylesheet" href="src/style.css">
+</head><body>
+<div id="vig"></div><div id="hud" class="hide"><div id="time">00:00</div><div id="stars"></div><div id="spd"><b id="kmh">0</b> км/ч</div><div id="help">WASD — движение · Пробел — ручник · ПКМ (зажать) — осмотр</div></div>
+<div id="menu" class="ov"><div class="card"><h1>ПОБЕГ</h1><p>Вы за рулём и выйти из машины нельзя. Уйдите от полиции в ночном городе — чем дольше продержитесь, тем больше машин и выше скорость погони.</p><button id="go">Начать погоню</button><small>W/S — газ/тормоз · A/D — руль · Пробел — ручник<br>Зажмите правую кнопку мыши и двигайте мышь, чтобы оглядеться</small></div></div>
+<div id="lose" class="ov hide"><div class="card"><h1>ВАС ДОГНАЛИ!</h1><p id="res"></p><button id="again">Попробовать снова (R)</button></div></div>
+<!-- Three.js -->
+<script src="src/three.min.js"></script>
+<!-- Game logic -->
+<script src="src/game.js"></script></body></html>
