@@ -1,9 +1,11 @@
-# 🌃 Night Escape
+# [🌃](https://kaoru965.github.io/night-escape) Night Escape
 
 **Night Escape** — это 3D браузерная игра на HTML5, CSS и JavaScript, созданная с использованием [Three.js](https://threejs.org/).
 
 Ты управляешь машиной ночью и пытаешься как можно дольше уйти от преследующих тебя полицейских.
 **Выйти из машины нельзя — только ехать дальше. 🚗💨**
+
+[![Preview](preview.gif)](https://kaoru965.github.io/night-escape)
 
 ## 🎮 Gameplay
 
@@ -37,10 +39,9 @@
 
 Игра работает прямо в современном веб-браузере.
 
-### Онлайн
+### Играть онлайн
 
-**Night Escape:**
-https://night-escape.vercel.app/
+[▶️ PLAY NIGHT ESCAPE](https://kaoru965.github.io/night-escape/)
 
 ### Локальный запуск
 
