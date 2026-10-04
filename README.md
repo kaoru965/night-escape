@@ -1,65 +1,104 @@
-# [🌃](https://kaoru965.github.io/night-escape) Night Escape
+# 🌃 Night Escape
 
-**Night Escape** — это 3D браузерная игра на HTML5, CSS и JavaScript, созданная с использованием [Three.js](https://threejs.org/).
+<p align="center">
+  <img src="./preview.gif" alt="Night Escape gameplay preview">
+</p>
 
-Ты управляешь машиной ночью и пытаешься как можно дольше уйти от преследующих тебя полицейских.
-**Выйти из машины нельзя — только ехать дальше. 🚗💨**
+<p align="center">
+  <strong>A 3D browser game about escaping a police pursuit at night.</strong>
+</p>
 
-[![Preview](preview.gif)](https://kaoru965.github.io/night-escape)
+<p align="center">
+  <a href="https://kaoru965.github.io/night-escape/">🎮 Play Now</a>
+  ·
+  <a href="https://github.com/kaoru965/night-escape">💻 Source Code</a>
+</p>
+
+---
+
+## 🚗 About
+
+**Night Escape** is a browser-based 3D driving game built with **HTML5, CSS3, JavaScript and Three.js**.
+
+You are behind the wheel of a car in a dark city.
+Police are chasing you.
+
+There is only one objective:
+
+# **Don't get caught.**
+
+You cannot leave the car.
+You cannot hide.
+
+**Just keep driving. 🌃🚓**
+
+---
 
 ## 🎮 Gameplay
 
-Твоя задача проста:
+Drive through the nighttime city while trying to survive the police pursuit for as long as possible.
 
-> **Продержись как можно дольше и не дай полиции тебя догнать.**
+The game features:
 
-Во время погони тебе придётся:
+* 🚗 **3D vehicle driving**
+* 🚓 **Police pursuit**
+* 🌃 **Nighttime city environment**
+* 🏢 **Building collisions**
+* 🌳 **Trees and environmental objects**
+* 💡 **Street lights**
+* 🖱️ **Mouse camera control**
+* ⏱️ **Survival time**
+* 💥 **Collision detection**
+* 🌐 **Runs directly in the browser**
 
-* 🚗 Управлять автомобилем
-* 🚓 Уходить от полицейских машин
-* 🏢 Избегать столкновений со зданиями и объектами
-* 🌳 Объезжать деревья
-* 💡 Ездить по ночному городу с фонарями
-* ⏱️ Устанавливать новый рекорд по времени
+Your survival time is your score.
 
-## 🕹️ Управление
+---
 
-| Клавиша / действие    | Функция                 |
-| --------------------- | ----------------------- |
-| `W`                   | Ехать вперёд            |
-| `A`                   | Повернуть влево         |
-| `S`                   | Ехать назад / тормозить |
-| `D`                   | Повернуть вправо        |
-| `Space`               | Тормоз                  |
-| `ПКМ + движение мыши` | Осмотр вокруг           |
+## 🕹️ Controls
 
-> Управление может отличаться в зависимости от текущей версии игры.
+| Input                        | Action              |
+| ---------------------------- | ------------------- |
+| `W`                          | Accelerate          |
+| `A`                          | Turn left           |
+| `S`                          | Reverse / slow down |
+| `D`                          | Turn right          |
+| `Space`                      | Brake               |
+| `Right Mouse Button + Mouse` | Look around         |
 
-## 🌐 Запуск
+> Controls may change as the game continues to receive updates.
 
-Игра работает прямо в современном веб-браузере.
+---
 
-### Играть онлайн
+## 🌐 Play Online
 
-[▶️ PLAY NIGHT ESCAPE](https://kaoru965.github.io/night-escape/)
+### ▶️ [Play Night Escape](https://kaoru965.github.io/night-escape/)
 
-### Локальный запуск
+No installation required.
 
-Клонируй репозиторий:
+Open the page, start the game and **drive**.
 
-```bash
-git clone https://github.com/kaoru965/night-escape.git
-cd nightescape
-```
+---
 
-Затем открой `index.html` через локальный веб-сервер.
+## 🛠️ Built With
 
-Например, можно использовать **Live Server** или любой другой статический HTTP-сервер.
+Night Escape uses a lightweight browser-based stack:
 
-## 📁 Структура проекта
+* **HTML5** — application structure
+* **CSS3** — interface and styling
+* **JavaScript** — game logic
+* **Three.js** — 3D rendering
+* **WebGL** — hardware-accelerated graphics
+
+Three.js is included locally in the repository rather than being loaded from an external CDN.
+
+---
+
+## 📁 Project Structure
 
 ```text
 nightescape/
+│
 ├── .ascode/
 │   ├── launch.jsonc
 │   └── settings.jsonc
@@ -70,6 +109,7 @@ nightescape/
 │   ├── style.css
 │   └── three.min.js
 │
+├── preview.gif
 ├── index.html
 ├── LICENSE
 └── README.md
@@ -77,54 +117,121 @@ nightescape/
 
 ### `.ascode/`
 
-Конфигурационные файлы проекта для **ASCode**.
+Project configuration files for **ASCode**.
 
 ### `src/game.js`
 
-Основная игровая логика: машина, управление, полиция, столкновения, игровой мир и другие механики.
+The main game code, including gameplay logic, vehicle controls, police pursuit, collisions and the 3D environment.
 
 ### `src/style.css`
 
-Стили интерфейса и элементов игры.
+Styles for the game's interface and visual elements.
 
 ### `src/three.min.js`
 
-Локальная копия Three.js, используемая для создания 3D-сцены.
+A local copy of Three.js used for rendering the 3D game world.
 
 ### `src/favicon.svg`
 
-Иконка игры.
+The game's favicon.
+
+### `preview.gif`
+
+A gameplay preview displayed in this README.
 
 ### `index.html`
 
-Главная HTML-страница, запускающая игру.
-
-## 🧰 Технологии
-
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **Three.js**
-* **WebGL**
-
-Игра работает полностью в браузере и не требует отдельного игрового клиента.
-
-## 📜 License
-
-Проект распространяется под лицензией, указанной в [`LICENSE`](./LICENSE).
-
-## ⭐ Contributing
-
-Если хочешь предложить улучшение или исправление:
-
-1. Сделай fork репозитория.
-2. Создай отдельную ветку для изменений.
-3. Внеси изменения.
-4. Создай Pull Request.
-
-Или просто открой Issue с описанием идеи или проблемы.
+The main entry point of the game.
 
 ---
 
-**Night Escape** — ночной город, одна машина и полиция позади.
-**Сколько ты продержишься? 🚗🌃🚓**
+## ▶️ Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kaoru965/night-escape.git
+cd night-escape
+```
+
+Then serve the project using a local HTTP server.
+
+For example, you can use **VS Code Live Server**, Python's built-in HTTP server, or another static web server.
+
+### Python
+
+```bash
+python -m http.server
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+> Opening `index.html` directly may work, but using a local HTTP server is recommended.
+
+---
+
+## 📸 Preview
+
+The repository contains a short gameplay recording in `preview.gif`.
+
+It shows the actual game running in the browser, including the nighttime environment and driving gameplay.
+
+---
+
+## 📜 License
+
+Night Escape is distributed under the license specified in [`LICENSE`](./LICENSE).
+
+Please read the license before redistributing or modifying the project.
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas and bug reports are welcome.
+
+If you find a problem or have an idea for improving Night Escape:
+
+1. Open an **Issue**, or
+2. Fork the repository.
+3. Create a branch for your changes.
+4. Make your changes.
+5. Open a **Pull Request**.
+
+---
+
+## 🗺️ Roadmap
+
+Possible future improvements include:
+
+* 🚓 More advanced police AI
+* 🌆 Larger city environments
+* 🚗 Additional vehicles
+* 🌧️ Weather effects
+* 🌙 Improved night lighting
+* 💥 More detailed collision effects
+* 🎵 Sound effects and music
+* 🏆 High-score system
+* ⚙️ Additional graphics settings
+
+The roadmap may change as development continues.
+
+---
+
+## 👤 Author
+
+Created by **kaoru965**.
+
+Built for the web with JavaScript and Three.js.
+
+---
+
+<p align="center">
+  <strong>🌃 NIGHT ESCAPE</strong>
+  <br>
+  <em>Keep driving. Don't get caught.</em>
+</p>
